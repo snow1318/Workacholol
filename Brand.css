@@ -1,0 +1,35 @@
+/* Container for brand logos */
+.brands-container {
+    overflow: hidden;
+    white-space: nowrap;
+    background: #f8f8f8;
+    padding: 20px 0;
+  }
+  
+  /* Scrolling animation */
+  .brands-scroll {
+    display: flex;
+    gap: 40px;
+    animation: scroll 30s linear infinite;
+  }
+
+  .brands-scroll:hover {
+    animation-play-state: paused; /* Pause on hover */
+  }
+  
+  /* Brand logos */
+  .brands-scroll img {
+    width: 120px; /* Adjust logo size */
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Keyframes for scrolling effect */
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
